@@ -8,6 +8,11 @@ table{
     margin: auto ;
     margin-top: 35px 45px;
     margin-bottom: 35px 45px;
-    background-color: honeydew;
-    color: springgreen;
+}
+.book-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
+    background: #fff;
 }
