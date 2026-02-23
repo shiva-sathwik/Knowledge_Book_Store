@@ -1,0 +1,13 @@
+body {
+    background-color: #808080;
+    color: #adff2f;
+    border: 10px solid #000000;
+    padding: 1rem;
+}
+table{
+    margin: auto ;
+    margin-top: 35px 45px;
+    margin-bottom: 35px 45px;
+    background-color: honeydew;
+    color: springgreen;
+}
