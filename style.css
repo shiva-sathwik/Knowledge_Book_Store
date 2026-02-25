@@ -1,13 +1,22 @@
 body {
     background-color: #808080;
-    color: #adff2f;
+    color: white;
     border: 10px solid #000000;
-    padding: 1rem;
+    padding: 3%;
 }
 table{
     margin: auto ;
-    margin-top: 35px 45px;
-    margin-bottom: 35px 45px;
+    background-color: #f0f8ff;
+}
+/*td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}*/
+.img{
+    width:200px;
+    height: 200px;
+    width: fit-content;
 }
 .book-card {
     text-align: center;
@@ -15,4 +24,18 @@ table{
     border: 1px solid #ddd;
     transition: 0.3s ease;
     background: #fff;
+}
+.left{
+    width: 20%;
+    background-color: #f0ffff;
+    padding: 20px 35px;
+}
+.right{
+    width: 80%;
+    background-color: #faebd7;
+    padding: 20px 35px;
+}
+.container{
+    display: flex;
+    height: 1000px;
 }
