@@ -7,49 +7,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header>
-        <h1 style="font-size: 500%;"><i> Knowledge Book Store</i>   </h1>
-        <p style="text-align: right;">
-            <a href="login.html" target="_main">
-            <img src="login.jpg", alt="Login" width="60">
-            </a>
+  <header class="header">
+      <h1 style="font-size: 500%;"><i> Knowledge Book Store </i></h1>
+      <a href="login.html" , target="_main">
+        <p style="text-align: right">
+          <img
+            src="login.jpg"
+            ,
+            alt="Login"
+            class="icon"
+          />
         </p>
-        <div style="text-align: center;">
-            <input type="search" placeholder="search" size="50" style="padding: 1%; font-size: large;">
-        </div>
-        <div style="text-align: right;">
+      </a>
+      <div style="text-align: center" class="book-card button">
+        <input type="search" placeholder="search" size="50" style="padding: 1%; font-size: medium;">
+      </div>
+      <div style="text-align: right">
         <a href="index.html" target="_main">
-        <img src="homepage.png" alt="Home Page" width="70">
+          <img
+            src="homepage.png"
+            alt="Home Page"
+            class="icon"
+          />
         </a>
-        <a href="UserProfile.html">
-        <img src="userprofile.png", alt="Profil" width="70">
+        <a href="UserProfile.html" target="_main">
+          <img
+            src="userprofile.png"
+            ,
+            alt="profil"
+            class="icon"
+          />
         </a>
-        <a href="shopingcart.html">
-        <img src="cart.avif", alt="Cart" width="70">
+        <a href="shopingcart.html" target="_main">
+          <img
+            src="cart.avif"
+            ,
+            alt="Cart"
+            class="icon"
+          />
         </a>
-        <img src="cate.png", alt="category" width="80">
-        </div>
-        <div>
-            <a href="aboutus.html">
-            <input type="button" value="About us" style="padding: 1%; font-size: large;">
-            </a>
-            <select name="All Catagories" style="padding: 1%; font-size: large;">
-                <option>All Catagories</option>
-                <Option>Story Books</Option>
-                <option>History</option>
-                <option>Science</option>
-            </select>
-            <input type="button" value="Free Books" style="padding: 1%; font-size: large;">
-            <a href="BookCatalog.html" target="_main"><input type="button" value="Book Catalogue" style="padding: 1%; font-size: large;"></a>
-            <input type="button" value="Contact" style="padding: 1%; font-size: large;">
-            <input type="button" value="Tearms and Conditions" style="padding: 1%; font-size: large;">
-            <input type="button" value="FAQ's" style="padding: 1%; font-size: large;">
-        </div>
+        <img
+          src="cate.png"
+          ,
+          alt="category"
+          class="icon"
+        />
+      </div>
+      <div class="book-card button">
+        <a href="aboutus.html">
+        <input type="button" value="About us" style="padding: 1%; font-size: large;" />
+        </a>
+        <select name="All Catagories" style="padding: 1%; font-size: large;">
+          <option>All Catagories</option>
+          <option>Store</option>
+          <option>History</option>
+          <option>Science</option>
+        </select>
+        <input type="button" value="Free Books" style="padding: 1%; font-size: large;" />
+        <a href="BookCatalog.html" target="_main"
+          ><input type="button" value="Book Catalogue" style="padding: 1%; font-size: large;"
+        /></a>
+        <input type="button" value="Contact" style="padding: 1%; font-size: large;" />
+        <input type="button" value="Tearms and Conditions" style="padding: 1%; font-size: large;" />
+       <input type="button" value="FAQ's" style="padding: 1%; font-size: large;" />
+      </div>
     </header>
     <hr>
     <main>
-        <div style="font-size: large;">
-        shopping bag
+        <div class="container " style="background-color: #f0f8ff;">
+            <div class="left" style="height: 500px; display: block; background-color: #f0f8ff;">
+            <h3>Shoping Cart</h3>
+            <img src="shopping.webp">
+            <br>
+            price = 120₹
+        </div>
+        <div class="right" style="font-size: large; background-color: #808080;">
+        </div>
         </div>
     </main>
     <footer>
