@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Page</title>
+    <title>Edit Profile</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js/pay.js"></script>
+    <script src="js/edit.js"></script>
 </head>
+
 <body>
-         <header class="header">
+
+ <header class="header">
       <h1 style="font-size: 500%;"><i> Knowledge Book Store </i></h1>
       <a href="login.html" , target="_main">
         <p style="text-align: right">
@@ -20,8 +21,8 @@
           />
         </p>
       </a>
-      <div style="text-align: center" class="book-card button">
-        <input type="search" placeholder="search" size="50" style="padding: 1%; font-size: medium;">
+      <div style="text-align: center">
+        <input type="search" placeholder="search" size="50" style="padding: 1%; font-size: large;">
       </div>
       <div style="text-align: right">
         <a href="index.html" target="_main">
@@ -54,7 +55,7 @@
           class="icon"
         />
       </div>
-      <div class="book-card button">
+      <div>
         <a href="aboutus.html">
         <input type="button" value="About us" style="padding: 1%; font-size: large;" />
         </a>
@@ -73,43 +74,39 @@
        <input type="button" value="FAQ's" style="padding: 1%; font-size: large;" />
       </div>
     </header>
-    <hr>
-    <main style="background-color: violet;">
-        <form style="text-align: center; color: darkblue;">
-            Address : <input type="text" placeholder="Full Address">
-            <div>
-                UPI :
-                <br>
-                Phonepe<input type="radio" >
-                <br>
-                Paytm<input type="radio">
-                <br>
-                Gpay<input type="radio">
-                <br>
-            </div>
-            <a href="Conform.html" target="_main">
-            <input type="button" value="Proceed">
-            </a>
-        </form>
-        <hr>
-        <h3 style="text-align: center;">OR</h3>
-        <hr>
-        <form style="text-align: center; color: aqua;">
-            <div>
-            Card Holder Name = <input type="text" placeholder="Name of Person">
-            <br>
-            Card Number = <input type="tel" placeholder="card no." size="17" max="16">
-            <br>
-            Expiry Date = <input type="tel" placeholder="Expiry Date" size="12" max="6">
-            <br>
-            CVV = <input type="password" placeholder="CVV" size="6">
-            </div>
-            <div>
-                <a href="Conform.html" target="_main">
-            <input type="button" value="Proceed">
-            </a>
-            </div>
-        </form>
-    </main>
+
+<hr>
+
+<main>
+<form id="editprofile">
+
+    <h2 style="text-align:center;">Edit Profile</h2>
+    <br>
+
+    <div style="text-align:center;">
+
+        <input type="text" id="edituser" placeholder="Enter Username"
+            style="padding:1%; font-size:large;"><br><br>
+
+        <input type="number" id="editphone" placeholder="Enter Phone Number"
+            style="padding:1%; font-size:large;"><br><br>
+
+        <input type="text" id="editemail" placeholder="Enter Email"
+            style="padding:1%; font-size:large;"><br><br>
+        
+        <input type="text" id="editaddress" placeholder=" 4/15-3, street no. 15, kilash Nagar, Nirmal "
+            style="padding: 1%; font-size: large;"> <br><br>
+
+        <a href="index.html" target="_main">
+        <input type="button" value="Update Profile" onclick="editUser()"
+            style="padding:1%; font-size:large;">
+        </a>
+        <input type="reset" value="Reset"
+            style="padding:1%; font-size:large;">    
+        </div>
+
+</form>
+</main>
+
 </body>
 </html>
