@@ -74,7 +74,7 @@
       </div>
     </header>
     <hr>
-    <main style="background-color: violet;">
+    <main>
         <form style="text-align: center; color: darkblue;">
             Address : <input type="text" placeholder="Full Address">
             <div>
@@ -94,19 +94,20 @@
         <hr>
         <h3 style="text-align: center;">OR</h3>
         <hr>
-        <form style="text-align: center; color: aqua;">
+        <form style="text-align: center; color: #000000" id="payform">
             <div>
-            Card Holder Name = <input type="text" placeholder="Name of Person">
-            <br>
-            Card Number = <input type="tel" placeholder="card no." size="17" max="16">
-            <br>
-            Expiry Date = <input type="tel" placeholder="Expiry Date" size="12" max="6">
-            <br>
-            CVV = <input type="password" placeholder="CVV" size="6">
+            Card Holder Name = <br> <input id="paycardholder" type="text" placeholder="Name of Person">
+            <br><br>
+            Card Number = <br><input id="paycardno" type="tel" placeholder="card no." size="17" max="16">
+            <br><br>
+            Expiry Date = <br> <input id="payexpiry" type="tel" placeholder="Expiry Date" size="12" max="6">
+            <br><br>
+            CVV = <br> <input id="paycvv" type="password" placeholder="CVV" size="6">
             </div>
+            <br><br>
             <div>
                 <a href="Conform.html" target="_main">
-            <input type="button" value="Proceed">
+            <input onclick="payUser()" type="button" value="Proceed to take Order" style="padding: 1%; font-size: large; padding-right: 5%; padding-left: 5%;">
             </a>
             </div>
         </form>
