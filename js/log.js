@@ -9,7 +9,10 @@ function loginUser(){
 
     if (password != "Cssr1234"){
         alert("The Password is incorrect!")
+        return false;
     }
+
     alert("Login is Done Successfully")
+    window.location.href ="index.html";
     return true;
 }
