@@ -25,5 +25,6 @@ function editUser(){
     }
 
     alert(" You edited your profile successfully! ")
+    window.location.href ="UserProfile.html"
     return true;
 }

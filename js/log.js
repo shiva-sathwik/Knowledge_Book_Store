@@ -11,5 +11,6 @@ function loginUser(){
         alert("The Password is incorrect!")
     }
     alert("Login is Done Successfully")
+    window.location.href = "index.html"
     return true;
 }
