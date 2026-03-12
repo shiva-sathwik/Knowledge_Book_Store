@@ -25,6 +25,5 @@ function payUser(){
     }
     
     alert(" Product Ordered Successfully! ")
-    window.location.href = "Conform.html";
     return true;
 }

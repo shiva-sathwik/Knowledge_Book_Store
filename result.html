@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/reg.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+<script>
+
+function getBook()
+{
+    var params = new URLSearchParams(window.location.search);
+    var bookName = params.get("book").toLowerCase();
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET","BookCatalog.xml",true);
+
+    xhttp.onreadystatechange = function()
+    {
+        if(this.readyState==4 && this.status==200)
+        {
+            var xml = this.responseXML;
+            var books = xml.getElementsByTagName("book");
+
+            var output = "Book not found";
+
+            for(var i=0;i<books.length;i++)
+            {
+                var title = books[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+                if(title.toLowerCase().includes(bookName))
+                {
+                    var author = books[i].getElementsByTagName("author")[0].childNodes[0].nodeValue;
+                    var price = books[i].getElementsByTagName("price")[0].childNodes[0].nodeValue;
+                    var year = books[i].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+                    var image = books[i].getElementsByTagName("image")[0].childNodes[0].nodeValue;
+
+                    output =
+                    "<h2>"+title+"</h2>" +
+                    "<img src='"+image+"' width='200'><br><br>" +
+                    "Author: "+author+"<br>" +
+                    "Price: ₹"+price+"<br>" +
+                    "Year: "+year;
+                }
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    };
+
+    xhttp.send();
+}
+
+</script>
+
 </head>
-<body>
+<body  onload="getBook()">
      <header class="header">
       <h1 style="font-size: 500%;"><i> Knowledge Book Store </i></h1>
       <a href="login.html" , target="_main">
@@ -75,47 +122,11 @@
        <input type="button" value="FAQ's" style="padding: 1%; font-size: large;" />
       </div>
     </header>
-    <br>
-    <hr>
+    <hr />
     <main>
-        <div>
-        <h1> Registration Form</h1>
-        </div>
-        <form style="text-align: center;" id="registerForm">
-            <div>
-                user_name :     <br>   <input type="text" id="regUser_Name" placeholder="user name" style="padding: 1%; font-size: large;" required>
-            </div>
-            <br>
-            <div>
-                Password :      <br>   <input type="password" id="regpassword" placeholder="Password" style="padding: 1%; font-size: large;" required>
-            </div>
-            <br>
-            <div>
-                Confirm Password : <br> <input type="password" id="regcpassword" placeholder="Password" style="padding: 1%; font-size: large;" required>
-            </div>
-            <br>
-            <div>
-                Name :       <br>      <input type="text" id="regname" placeholder="Name" style="padding: 1%; font-size: large;" required>
-            </div>
-            <br>
-            <div>
-                Address :    <br>      <input type="text" id="regaddress" placeholder="Address" height="100" style="padding: 1%; font-size: large;" required>
-            </div>   
-            <br>
-            <div>
-                City : <br> <input type="text"  id="regcity" placeholder="City" style="padding: 1%; font-size: large;" required>
-            </div>
-            <br>
-            <div>
-                Pincode : <br> <input type="tel" id="regpincode" placeholder="Pincode" style="padding: 1%; font-size: large;" required>
-            </div>
-            <br>
-            <div>
-                <a href="regipage.html" target="_main">
-                    <input type="button" value="Registere" onclick="registerUser()" style="padding: 1%; font-size: large;">
-                </a>
-            </div>
-        </form>
+        <h1>Book Details</h1>
+
+        <div id="result"></div>
     </main>
 </body>
 </html>

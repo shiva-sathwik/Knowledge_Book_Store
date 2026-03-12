@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+<book>
+<id>1</id>
+<title>The World Encyclopedia</title>
+<author>Various Authors</author>
+<price>105</price>
+<year>2023</year>
+<image>images/encyclo.jpeg</image>
+</book>
+
+<book>
+<id>2</id>
+<title>User's Guide To Rapid Prototyping</title>
+<author>Todd Grimm</author>
+<price>478</price>
+<year>2014</year>
+<image>images/prototyping.jpeg</image>
+</book>
+
+<book>
+<id>3</id>
+<title>Sakamoto Days Volume 1</title>
+<author>Yuto Suzuki</author>
+<price>300</price>
+<year>2003</year>
+<image>images/shopping.webp</image>
+</book>
+
+<book>
+<id>4</id>
+<title>The Alchemist</title>
+<author>Paulo Coelho</author>
+<price>989</price>
+<year>1998</year>
+<image>images/alchemist.jpeg</image>
+</book>
+
+<book>
+<id>5</id>
+<title>Tales From the Panchatantra</title>
+<author>Vishnu Sharma</author>
+<price>250</price>
+<year>1988</year>
+<image>images/panchatantra.webp</image>
+</book>
+
+<book>
+<id>6</id>
+<title>Death Note Volume 1</title>
+<author>Tsugumi Ohba</author>
+<price>629</price>
+<year>1991</year>
+<image>images/deathnote.jpg</image>
+</book>
+
+<book>
+<id>7</id>
+<title>Stories from the Panchatantra</title>
+<author>Vishnu Sharma</author>
+<price>549</price>
+<year>2000</year>
+<image>images/panchatantra1.webp</image>
+</book>
+
+<book>
+<id>8</id>
+<title>Bhagavatam Telugu</title>
+<author>Potana Mahakavi</author>
+<price>6940</price>
+<year>2017</year>
+<image>images/bhagavatam.jpg</image>
+</book>
+
+<book>
+<id>9</id>
+<title>Hindus in Hindu Rashtra</title>
+<author>Anand Ranganathan</author>
+<price>399</price>
+<year>2023</year>
+<image>images/telangana.jpeg</image>
+</book>
+
+<book>
+<id>10</id>
+<title>British Rule in India</title>
+<author>Pandit Sunderlal</author>
+<price>525</price>
+<year>2018</year>
+<image>images/british.avif</image>
+</book>
+
+</bookstore>

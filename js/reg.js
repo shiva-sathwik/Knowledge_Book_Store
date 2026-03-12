@@ -43,6 +43,5 @@ function registerUser(){
     }
 
     alert(" Registered Successfully! ")
-    window.location.href = "index.html"
     return true;
 }
